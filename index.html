@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Mensendieck Oefentherapie</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
+<link href="web/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<script src="web/js/jquery.min.js"></script>
+<script type="text/javascript"  src="web/js/menu.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFfsiZ9PIg1DiYaogBcLNrV6u_-RmwC0E&sensor=true"></script>
+<script type="text/javascript"  src="web/js/maps.js"></script>
+<script type="text/javascript"  src="web/js/test.js"></script>
+<script type="text/javascript" src="web/js/move-top.js"></script>
+<script type="text/javascript" src="web/js/easing.js"></script>
+   <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+	    <link rel="stylesheet" type="text/css" href="web/css/slider.css" />
+		<script type="text/javascript" src="web/js/modernizr.custom.28468.js"></script>
+		<script type="text/javascript" src="web/js/jquery.cslider.js"></script>
+			<script type="text/javascript">
+				$(function() {
+				
+					$('#da-slider').cslider({
+						autoplay	: true,
+						bgincrement	: 5000
+					});
+				
+				});
+			</script>
+		
+</head>
+<body>
+<div class="header_bg">
+<div class="wrap">
+	<div id="content">
+      <header id="topnav">
+        <nav>
+        		 <ul>
+					<li class="active"><a href="#home" class="scroll">Home</a></li>
+					<li><a href="#about" class="scroll">De Houdingscheck</a></li>
+					<li><a href="#thequiz" class="scroll">Doe de test!</a></li>
+					<li><a href="#vestiginginfo" class="scroll">Info</a></li>
+					<li><a href="#contact" class="scroll">Contact</a></li>
+					<div class="clear"> </div>
+				</ul>
+        </nav>
+         <h1><a href="index.html"><img src="web/images/logo3.png"></a></h1>
+        <a href="#" id="navbtn">Nav Menu</a>
+        <div class="clear"> </div>
+      </header>
+    </div>
+</div>
+</div>
+<div class="slider_bg" id="home">
+<div class="wrap">
+	<div class="slider">
+				
+				<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Dans jezelf naar de 80!</h2>
+					<p>Wil jij nog op je 80ste kunnen losgaan op je favoriete muziek? Doe de Houdingscheck om te zien of het mogelijk is. Het begint allemaal met een goede houding. Doe de gratis Houdingscheck!</p>
+				</div>
+				<div class="da-slide">
+					<h2>Heb jij de houdingscheck nodig?</h2>
+					<p>Doe de online test, zodat je kunt zien of je de houdingscheck nodig hebt!</p>
+				</div>
+				<div class="da-slide">
+					<h2>Maak een afspraak!</h2>
+					<p>De Houdingscheck wordt vergoed door uw verzekering, kom gerust langs als u onzeker bent over uw houding.</p>
+					<a href="#contact" class="da-link">AFSPRAAK</a>
+				</div>			
+			</div>
+ 			
+ 	</div>
+</div>
+</div>
+
+	<div class="about-grids" id="about">
+		<div class="wrap">
+			<h3 class="heading" style="padding: 0em; padding-top:0.5em">WAT IS DE HOUDINGSCHECK?</h3>
+		<div class="years-grid">
+		<a href="#" style="cursor:default;"><img style="height:50%; width:50%;" src="web/images/dans_4.jpg"></a>
+		</div>
+		
+		<div class="one-of-grid">
+			<div class="grid_of_1">
+				<h4>Wat is de Houdingscheck?</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+			</div>
+			<div class="grid_of_1">
+				<h4>Waarom heb ik een houdingscheck nodig?</h4>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has  when an unknown printer took a galley of type and scrambled it to make a type specimen.</p>
+			</div>
+			<div class="grid_of_1">
+				<h4>Waar kan ik een afspraak maken?</h4>
+				<p>Je kunt een afspraak maken doormiddel van het formulier onder aan de pagina in te vullen.</p>
+			</div>
+			<div class="clear"> </div>
+		</div>
+		<div class="map_grid">
+			
+			
+			<div class="map">
+				<a href="#contact" style="cursor:default"><img src="web/images/dans_2.jpg"></a>
+			</div>	
+			<div class="clear"> </div>	
+		</div>
+		</div>
+	</div>
+<div class="quiz" id="thequiz">
+	<div class="wrap">
+		<h3 class="heading">DE ONLINE TEST</h3>
+		<p class="desc">Beantwoord deze simpele vragen voor jouw advies!</p>
+	<div class="main content_top">
+		<div class="span_of_3">
+			<div id="theQuiz" style="margin-top:4em">
+							<div id="q1">1. Heb je een holle onderrug of bolle bovenrug?</div><br>
+							<span id="buttons">
+								<input type="button" onclick="yesclick1()" value="Ja" class="botan">
+								<input type="button" onclick="noclick1()" value="Nee" class="botan">
+							</span>
+						</div>
+			<h2 style="padding-top: 7em; font-size:25px;">Aan de hand van deze test, kun je zien of je de gratis houdingscheck nodig hebt!</h2>
+			<div class="clear"> </div>
+		</div>
+		</div>
+	</div>
+</div>
+	<script type="text/javascript" src="web/js/jquery.mixitup.min.js"></script>
+	<script src="web/js/jquery.magnific-popup.js" type="text/javascript"></script>
+		<script>
+			$(document).ready(function() {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+			});
+		});
+		</script>
+
+<div class="vestiging" id="vestiginginfo">
+<div class="wrap">
+		<h3 class="heading">INFO</h3>
+		<p class="desc">Hier vindt je onze vestigingen en informatie</p>
+		<div class="main_btm">	
+		<!--info-->
+			<div class="gallery">
+			<div class="container">
+			<div id="gallerylist">
+				<div class="gallerylist-wrapper">				
+						<div class="desc">
+						 	<h2>Centrum voor Gezond Bewegen</h2>
+						 	<p>Koopweg 4, 1402PD Bussum</p>
+						 	<p>035-6914883</p>
+						 	<p><a href="http://centrumvoorgezondbewegen.nl">http://centrumvoorgezondbewegen.nl</a></p>
+						 	<p><a href="mailto:oefentherapiebussum@hotmail.com">oefentherapiebussum@hotmail.com</a></p>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">				
+						<div class="desc">
+						 	<h2>Centrum voor Gezond Bewegen Naarden</h2>
+						 	<p>Lambertus Hortensiuslaan 40-c, 1412GX Naarden</p>
+						 	<p>035-6940940</p>
+						 	<p><a href="http://centrumvoorgezondbewegen.nl">http://centrumvoorgezondbewegen.nl</a></p>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">				
+						<div class="desc">
+						 <h2>Centrum voor Gezond Bewegen De Meent</h2>
+						 	<p>De Meent 10-b, 1218 CB Hilversum</p>
+						 	<p>06-26706095</p>
+						 	<p><a href="http://centrumvoorgezondbewegen.nl">http://centrumvoorgezondbewegen.nl</a></p>
+						 	<p><a href="mailto:ginobrouwn@hotmail.com">ginobrouwn@hotmail.com</a></p>
+						</div>
+					</a>
+				</div>
+			</div>		
+			<div id="gallerylist1">
+				<div class="gallerylist-wrapper">				
+						<div class="desc">
+						 	<h2>Gezondheidscentrum Weesp</h2>
+						 	<p>C.J. van Houtenlaan 1E, 1381CN Weesp</p>
+						 	<p>0294-418322</p>
+						 	<p><a href="www.mpraktijk.nl">www.mpraktijk.nl</a></p>
+						 <p><a href="mailto:info@mpraktijk.nl">info@mpraktijk.nl</a></p>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">							
+						<div class="desc">
+						 	<h2>Gezondheidscentrum Casa Cura</h2>
+						 	<p>Neuweg 27, 1211LV Hilversum</p>
+						 	<p>035-6424388</p>
+						 	<p><a href="www.mpraktijk.nl">www.mpraktijk.nl</a></p>
+						 <p><a href="mailto:info@mpraktijk.nl">info@mpraktijk.nl</a></p>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">				
+						<div class="desc">
+						 <h2>Paramedisch Centrum Daltonstraat</h2>
+						 <p>Daltonstraat 176, 1223RT Hilversum</p>
+						 <p>035-6424388</p>
+						 <p><a href="www.mpraktijk.nl">www.mpraktijk.nl</a></p>
+						 <p><a href="mailto:info@mpraktijk.nl">info@mpraktijk.nl</a></p>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper" style="visibility:hidden">				
+						<div class="desc">
+						 <h2>Paramedisch Centrum Daltonstraat</h2>
+						 <p>Daltonstraat 176, 1223RT Hilversum</p>
+						 <p>035-6424388</p>
+						 <p><a href="www.mpraktijk.nl">www.mpraktijk.nl</a></p>
+						 <p><a href="mailto:info@mpraktijk.nl">info@mpraktijk.nl</a></p>
+						</div>
+					</a>
+				</div>
+				<div class="gallerylist-wrapper">				
+						<div class="desc">
+						 <h2>MTC Huizen</h2>
+						 <p>Hugo de Grootsingel 1</p>
+						 <p>035-5231144</p>
+						 <p><a href="www.mtchuizen.com">www.mtchuizen.com</a></p>
+						 <p><a href="mailto:smitswarte@mtchuizen.com">smitswarte@mtchuizen.com</a></p>
+						</div>
+					</a>
+				</div>
+			</div>																																					
+		</div>
+	</div>
+	<script type="text/javascript">$('body').flipLightBox()</script>
+	<div class="clear"> </div>
+	</div>
+</div>
+</div>
+<div class="contact" id="contact">
+	<h3 class="heading">Contact</h3>
+			<p class="desc"></p>
+	<div class="map">
+
+		<style type="text/css">
+      #map-canvas { width: 100%; height: 380px; }
+    		</style>
+			<div id="map-canvas"/></div>
+	</div>
+	<div class="contact-form">
+		<div class="wrap">
+			 	 <div class="content">
+		 	 	<h2 class="heading1">Maak nu een afspraak!</h2>
+		 		 </div>
+					    <form method="post" action="#">
+					    	<div>
+						    	<input name="userName" type="text" class="textbox" value="Naam*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Naam*';}">
+						    	<input name="userEmail" type="text" class="textbox" value="Email*" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email*';}">
+						    	<input name="userPhone" type="text" class="textbox"  value="Onderwerp" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Subject';}">
+						    	 <div class="clear"> </div>
+						    </div>
+						  
+						    <div>
+						    <textarea value="Jouw bericht:" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Jouw bericht';}">Bericht</textarea>
+						    </div>
+						   <div>
+						   		<span><input type="submit" class="" value="VERSTUUR"></span>
+						  </div>
+					    </form>
+				    </div>
+  				<div class="clear"> </div>		
+			  </div>
+</div>
+</div>
+
+<div class="footer">
+		<div class="footer_top">
+			<div class="wrap">
+		<div class="social-icons">
+			 <ul>
+			      <li><a href="#" target="_blank"></a></li>
+				  
+				  <div class="clear"> </div>
+			</ul>
+		</div>
+		<div class="footer_nav">
+			<ul>
+				<li class="active"><a href="#home" class="scroll">Home</a></li>
+					<li><a href="#about" class="scroll" >Houdingscheck</a></li>
+					<li><a href="#thequiz" class="scroll">Doe de test!</a></li>
+					<li><a href="#vestiginginfo" class="scroll">Info</a></li>
+					<li><a href="#contact" class="scroll">Contact</a></li>
+				<div class="clear"> </div>
+			</ul>
+		</div>
+		<div class="clear"> </div>
+		</div>
+	    <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop',
+					containerHoverID: 'toTopHover',
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+</div>
+<p class="copy_right">Doe de Houdingscheck! &#169; 2014</a> </p>
+</body>
+</html>		
+		
